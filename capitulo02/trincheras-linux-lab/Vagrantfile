@@ -1,0 +1,60 @@
+# Clonación del repositorio con los comandos y recursos desde GitHub
+$git_trincheras_linux = <<-SCRIPT
+  echo Clonando repositorio 'trincheras-linux' desde GitHub...
+  git clone https://github.com/blancazure/trincheras-linux.git
+  mkdir ~/trincheras-linux/capitulo05/estructura/.directorio-oculto
+  chown -R vagrant:vagrant trincheras-linux
+SCRIPT
+
+Vagrant.configure("2") do |config|
+  # Configuración base para todas las VM
+  config.vm.provider "virtualbox" do |vb|
+    vb.check_guest_additions = false     
+    vb.memory = "2048"
+    vb.cpus = 2
+    vb.gui = true
+  end
+
+  # Establece el tiempo máximo de espera de inicio en 600s
+  config.vm.boot_timeout = 600  
+
+  # Desactivar la instalación y actualización de las Guest Additions
+  config.vbguest.auto_update = false
+  config.vbguest.no_install = true    
+
+  # Se desactivan las carpetas compartidas, no se van a utilizar
+  config.vm.synced_folder ".", "/vagrant", disabled: true      
+
+  # Definición de las máquinas
+  machines = [
+    {name: "ubuntu", ip: "192.168.10.11", 
+     ports: 51100..51105, script: "script-ubuntu.sh"},
+    {name: "fedora", ip: "192.168.10.12", 
+     ports: 51200..50205, script: "script-fedora.sh"}
+  ]
+
+  # Configuración de cada máquina utilizando un bucle
+  machines.each do |machine|
+    config.vm.define "vm-lab-linux-#{machine[:name]}" do |vm_config|
+      vm_config.vm.box = "blancazure/box-lab-linux-#{machine[:name]}"
+      vm_config.vm.box_check_update = true
+      vm_config.vm.hostname = "vm-lab-linux-#{machine[:name]}"
+      vm_config.vm.network "private_network", ip: machine[:ip]
+
+      machine[:ports].each do |port|
+        vm_config.vm.network "forwarded_port", guest: port, host: port
+      end
+
+      vm_config.vm.provision "shell", path: "./scripts/#{machine[:script]}"
+      vm_config.vm.provision "shell", inline: $git_trincheras_linux
+
+      vm_config.vm.provider "virtualbox" do |v|
+        v.name = "vm-lab-linux-#{machine[:name]}"
+      end
+
+      vm_config.vm.post_up_message = <<-MESSAGE
+        La máquina 'vm-lab-linux-#{machine[:name]}' ha sido desplegada correctamente.
+      MESSAGE
+    end
+  end
+end
