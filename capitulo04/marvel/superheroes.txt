@@ -79,8 +79,8 @@ Hermana de T'Challa, es la princesa de Wakanda y una brillante científica que d
 27. Loki (Versión Alternativa)
 Aunque es el villano en varias películas, una versión alternativa de Loki escapa con el Teseracto en Avengers: Endgame y protagoniza su propia serie en el UCM.
 
-28. Shang-Chi
-Un maestro de artes marciales que es arrastrado a una conspiración relacionada con los Diez Anillos, un grupo terrorista que amenaza el equilibrio mundial.
+	28. Shang-Chi
+	Un maestro de artes marciales que es arrastrado a una conspiración relacionada con los Diez Anillos, un grupo terrorista que amenaza el equilibrio mundial.
 
-29. The Eternals
-Un grupo de seres inmortales creados por los Celestiales para proteger la Tierra. Sus miembros incluyen a Ikaris, Sersi, Thena, Kingo, entre otros.
+	29. The Eternals
+	Un grupo de seres inmortales creados por los Celestiales para proteger la Tierra. Sus miembros incluyen a Ikaris, Sersi, Thena, Kingo, entre otros.
