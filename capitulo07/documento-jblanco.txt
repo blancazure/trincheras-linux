@@ -1,0 +1,38 @@
+Notas de la Reunión Daily Scrum
+Fecha: 12 de Septiembre de 2024
+Responsable de la toma de notas: Javier Blanco (jblanco)
+
+1. Participantes:
+	* Javier Blanco
+	* Alejandro Martinez
+	* Iago Rivas
+	* Daviz Alvarez
+	* Angela Perez
+
+2. Temas Discutidos:
+
+* Progreso del Sprint:
+	* Todos los integrantes del equipo informaron sobre el estado de sus tareas asignadas.
+	* Se completaron 3 historias de usuario, quedando 2 en curso.
+	* Se identificó un pequeño retraso en la tarea de integración de la API debido a problemas con las dependencias.
+
+* Bloqueadores:
+	* **Integración de la API**: 
+		* Iago Rivas reportó problemas con las dependencias externas de la API.
+		* Se acordó que Alejandro Martinez lo asistirá para resolver el problema antes del final del día.
+	* **Pruebas unitarias**: 
+		* Daviz Alvarez mencionó que las pruebas unitarias no se están ejecutando correctamente en el entorno de integración continua.
+		* Angela Perez se encargará de revisar la configuración del pipeline para asegurarse de que las pruebas corran sin problemas.
+
+* Próximos pasos:
+	* **Integración de la API**: Javier y Alejandro trabajarán en solucionar los problemas de dependencia y realizarán pruebas de integración.
+	* **Revisión del pipeline de pruebas**: David revisará y corregirá los problemas con las pruebas unitarias en el entorno de CI.
+	* **Refinamiento de historias**: Mañana se llevará a cabo una reunión de refinamiento para las nuevas historias del próximo sprint.
+	* **Demostración**: Se programó la demostración del Sprint para el viernes 15 de septiembre.
+
+3. Notas adicionales:
+	* Se discutió la posibilidad de realizar una retrospectiva del Sprint el lunes 18 de septiembre, después de la demostración.
+	* La velocidad del equipo se mantuvo estable, pero se acordó revisar la planificación del siguiente sprint para ajustar la carga de trabajo en función de los bloqueadores actuales.
+
+4. Próxima Reunión:
+	* Mañana, 13 de septiembre de 2024, a las 9:00 AM.

@@ -1,0 +1,92 @@
+Parche de Seguridad - Actualización Crítica de Librería
+Equipo de Soporte
+Fecha: Septiembre 2024
+
+1. Descripción del Problema:
+	* Se ha identificado una vulnerabilidad crítica en la librería `libseguridad.so` utilizada por el software de la empresa en versiones anteriores a la 1.2.3.
+	* La vulnerabilidad permite una escalada de privilegios que podría ser explotada por un atacante para obtener acceso no autorizado al sistema.
+	* Se ha desarrollado un parche de seguridad para corregir esta vulnerabilidad, el cual incluye una actualización de la librería afectada a la versión 1.2.3.
+
+2. Requisitos Previos:
+	* Antes de aplicar el parche, asegúrate de:
+		* Tener acceso con privilegios de administrador en el sistema donde se aplicará el parche.
+		* Realizar una copia de seguridad completa del sistema y del software afectado.
+		* Detener todos los servicios relacionados con el software para evitar conflictos durante la actualización.
+		* Comprobar que tienes la versión 1.2.2 o anterior del software, ya que el parche solo es aplicable a esas versiones.
+
+3. Pasos para Aplicar el Parche de Seguridad:
+
+	1. **Descarga del Parche:**
+		* Descarga el parche desde el repositorio oficial de la empresa:
+		  `https://repositorio.empresa.com/parches/libseguridad_parche_v1.2.3.tar.gz`
+		* Alternativamente, puedes obtener el parche solicitándolo al equipo de Soporte.
+
+	2. **Verificación de la Integridad del Parche:**
+		* Una vez descargado, verifica la integridad del archivo ejecutando:
+		  ```bash
+		  sha256sum libseguridad_parche_v1.2.3.tar.gz
+		  ```
+		* Asegúrate de que el hash generado coincida con el siguiente:
+		  `3e7df4b85b1ff82e1dbbc7418c6d7f7e5e0123456789abcdef5678abcdeffg12`
+		* Si el hash no coincide, descarga nuevamente el parche.
+
+	3. **Descompresión del Paquete del Parche:**
+		* Descomprime el archivo del parche utilizando:
+		  ```bash
+		  tar -xzvf libseguridad_parche_v1.2.3.tar.gz
+		  ```
+
+	4. **Detener el Servicio del Software:**
+		* Antes de proceder con la actualización de la librería, es necesario detener el servicio del software afectado. Usa el siguiente comando:
+		  ```bash
+		  sudo systemctl stop nombre-del-software
+		  ```
+
+	5. **Aplicar la Actualización de la Librería:**
+		* Reemplaza la librería afectada (`libseguridad.so`) por la nueva versión:
+		  ```bash
+		  sudo cp libseguridad.so.1.2.3 /usr/local/lib/libseguridad.so
+		  ```
+		* Verifica los permisos del archivo para asegurarte de que sean correctos:
+		  ```bash
+		  sudo chmod 755 /usr/local/lib/libseguridad.so
+		  sudo chown root:root /usr/local/lib/libseguridad.so
+		  ```
+
+	6. **Actualizar las Dependencias del Sistema:**
+		* Luego de reemplazar la librería, actualiza las dependencias:
+		  ```bash
+		  sudo ldconfig
+		  ```
+
+	7. **Reiniciar el Servicio:**
+		* Una vez aplicada la actualización, reinicia el servicio del software:
+		  ```bash
+		  sudo systemctl start nombre-del-software
+		  ```
+
+	8. **Verificación de la Actualización:**
+		* Verifica que el servicio esté corriendo correctamente con:
+		  ```bash
+		  sudo systemctl status nombre-del-software
+		  ```
+		* También puedes verificar la versión de la librería actualizada ejecutando:
+		  ```bash
+		  strings /usr/local/lib/libseguridad.so | grep "Version"
+		  ```
+
+4. Pasos para Confirmar la Solución:
+
+	* Después de aplicar el parche, realiza una prueba funcional del software para asegurarte de que todo funcione correctamente.
+	* Verifica los logs del sistema para asegurarte de que no haya errores relacionados con la librería actualizada:
+	  ```bash
+	  sudo journalctl -xe | grep nombre-del-software
+	  ```
+
+5. Consideraciones Finales:
+	* Si el sistema muestra errores o el software no se comporta como se esperaba, contacta al equipo de Soporte para asistencia adicional.
+	* Asegúrate de conservar una copia del archivo de parche por si es necesario realizar futuras revisiones.
+	* Es recomendable realizar un monitoreo constante durante las primeras horas después de aplicar el parche para detectar cualquier comportamiento anómalo.
+
+6. Contacto:
+	Para cualquier consulta o asistencia durante el proceso de actualización, contacta con el equipo de Soporte enviando un correo a soporte@empresa.com o llamando al +34 123 456 789.

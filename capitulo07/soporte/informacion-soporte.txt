@@ -1,0 +1,36 @@
+Instrucciones para el Uso de la Carpeta de Compartición de Información del Grupo Soporte
+
+Propósito de la Carpeta:
+	La carpeta de compartición de información del grupo Soporte está diseñada para facilitar el intercambio de archivos importantes entre los miembros del equipo de soporte y otros grupos de la empresa. Esta carpeta debe ser utilizada para almacenar y compartir información relevante, como manuales, informes de errores, scripts de mantenimiento, y cualquier otro documento necesario para el soporte técnico y la colaboración con otros equipos.
+
+Normas para el Uso Correcto de la Carpeta:
+
+* Almacenamiento de Archivos:
+	* Solo debe almacenarse información relevante para las actividades del equipo de soporte.
+	* Los archivos deben estar organizados en subcarpetas de acuerdo con su tipo, proyecto, o función. Evitar dejar archivos sueltos en el directorio principal.
+	* Los nombres de los archivos y carpetas deben ser claros y descriptivos. Ejemplo: `Informe_Errores_Septiembre_2024.pdf` en lugar de `informe.pdf`.
+	* Evita duplicar archivos. Si un archivo ya existe, verifica que no sea necesario crear otra copia. Si es necesario actualizar un archivo, asegúrate de que la versión anterior esté debidamente archivada o renombrada como “_OLD” o “_v1”.
+
+* Permisos y Acceso:
+	* Los archivos almacenados en esta carpeta son accesibles por todos los miembros del grupo de soporte y ciertos otros grupos según lo que se haya definido por la administración.
+	* No modifiques los permisos de los archivos o carpetas sin la autorización de un administrador de sistemas.
+	* No compartas información sensible fuera del grupo de soporte a menos que sea autorizado.
+
+* Limpieza y Mantenimiento:
+	* Revisa y elimina archivos obsoletos o que ya no sean relevantes para el trabajo del grupo. La limpieza de la carpeta debe realizarse mensualmente.
+	* Cualquier archivo que ya no sea necesario pero que deba conservarse para referencia futura, debe ser movido a la subcarpeta de "Archivos Antiguos".
+	* Mantén el directorio libre de archivos temporales o personales que no sean útiles para otros usuarios.
+
+* Backup de Información:
+	* Toda la información crítica que se coloque en la carpeta debe estar respaldada en el sistema de copias de seguridad de la empresa. Verifica que los archivos importantes estén incluidos en las copias de seguridad automáticas. Si un archivo debe ser respaldado manualmente, comunícalo al administrador del sistema.
+
+* Actualización y Comunicación:
+	* Cuando agregues un archivo de interés general para otros usuarios del equipo o de otros departamentos, envía una notificación por correo electrónico o utiliza el canal de comunicación interno correspondiente.
+	* Asegúrate de incluir una descripción clara del contenido del archivo y por qué es relevante.
+
+* Uso Responsable:
+	* La carpeta de compartición no debe usarse para almacenar archivos personales o irrelevantes para el trabajo del grupo.
+	* El incumplimiento de estas normas puede llevar a la limitación de permisos y sanciones, en caso de uso inadecuado.
+
+En caso de dudas:
+	Si no estás seguro de cómo organizar o compartir un archivo, o si tienes alguna pregunta sobre el uso de la carpeta de compartición, contacta al administrador de sistemas o al jefe del grupo de soporte.

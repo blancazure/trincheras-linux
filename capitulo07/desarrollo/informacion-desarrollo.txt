@@ -1,0 +1,37 @@
+Instrucciones para el Uso de la Carpeta de Compartición de Información del Grupo Desarrollo
+
+Propósito de la Carpeta:
+	La carpeta de compartición de información del grupo Desarrollo está destinada a facilitar el intercambio de archivos importantes entre los miembros del equipo de desarrollo y otros grupos de la empresa. Esta carpeta debe utilizarse para almacenar y compartir código fuente, documentación técnica, bibliotecas, herramientas, y cualquier otro material necesario para el proceso de desarrollo de software.
+
+Normas para el Uso Correcto de la Carpeta:
+
+* Almacenamiento de Archivos:
+	* Solo deben almacenarse archivos relacionados con el desarrollo de software, como código fuente, documentación, scripts de automatización, etc.
+	* Los archivos deben estar organizados en subcarpetas por proyecto, módulo o función. No dejes archivos sueltos en el directorio raíz.
+	* Nombra los archivos de manera clara y descriptiva. Ejemplo: `modulo_autenticacion_v1.py` en lugar de `modulo.py`.
+	* Evita duplicar archivos. Si actualizas un archivo, renombra la versión anterior como “_OLD” o usa un sistema de versiones como “_v1”, “_v2”.
+
+* Permisos y Acceso:
+	* Los archivos en esta carpeta son accesibles por todos los miembros del grupo de desarrollo y, según sea necesario, por otros equipos. No modifiques los permisos sin autorización.
+	* Si un archivo contiene información sensible, consulta con el administrador del sistema antes de compartirlo fuera del grupo.
+	* No otorgues permisos de escritura a personas externas al equipo de desarrollo sin previa aprobación.
+
+* Limpieza y Mantenimiento:
+	* Los archivos obsoletos o que ya no son necesarios deben eliminarse o archivarse. Realiza esta limpieza mensualmente para evitar la acumulación de archivos innecesarios.
+	* Mueve los archivos antiguos que no se usan activamente a una subcarpeta llamada "Archivos Antiguos" para evitar confusión.
+	* Evita almacenar archivos temporales, binarios no versionados, o archivos personales en esta carpeta.
+
+* Backup de Información:
+	* Asegúrate de que todo el código fuente y la documentación crítica se incluyan en el sistema de backup de la empresa.
+	* Verifica que los archivos importantes estén en las copias de seguridad automáticas, especialmente aquellos relacionados con proyectos en producción o en fases críticas de desarrollo.
+
+* Actualización y Comunicación:
+	* Al agregar un archivo importante o actualizar uno existente, envía una notificación a los miembros del equipo mediante los canales internos (correo electrónico o chat) con una breve descripción del cambio y el motivo.
+	* Asegúrate de que el archivo esté bien documentado para que otros puedan entender su propósito y uso.
+
+* Uso Responsable:
+	* No uses la carpeta de desarrollo para almacenar archivos que no estén relacionados con los proyectos activos o el trabajo de desarrollo.
+	* El uso inadecuado de esta carpeta puede derivar en la pérdida de permisos de acceso y otras medidas disciplinarias.
+
+En caso de dudas:
+	Si tienes alguna duda sobre cómo organizar, compartir o gestionar los archivos, contacta al administrador del sistema o al líder del grupo de desarrollo para obtener orientación.

@@ -1,0 +1,37 @@
+Instrucciones para el Uso de la Carpeta de Compartición Común (Desarrollo, Implantación y Soporte)
+
+Propósito de la Carpeta:
+	La carpeta de compartición común está disponible para facilitar el intercambio de archivos entre los grupos de Desarrollo, Implantación y Soporte. Su uso debe estar enfocado en compartir recursos, documentación y cualquier otro material relevante que sea útil para la colaboración entre los diferentes equipos.
+
+Normas para el Uso Correcto de la Carpeta:
+
+* Almacenamiento de Archivos:
+	* Solo deben almacenarse archivos que sean relevantes y necesarios para todos los grupos (Desarrollo, Implantación y Soporte).
+	* Los archivos deben estar organizados en subcarpetas según el tipo de documento o proyecto. Evitar colocar archivos en la raíz de la carpeta.
+	* Nombres de archivos descriptivos son esenciales para facilitar la búsqueda. Ejemplo: `Guia_Instalacion_Sistema_X.pdf` en lugar de `guia.pdf`.
+	* No se deben duplicar archivos. Si actualizas un archivo, renombra la versión anterior con un sufijo como “_OLD” o utiliza un sistema de versiones como “_v1”, “_v2”.
+
+* Permisos y Acceso:
+	* Todos los usuarios de los grupos Desarrollo, Implantación y Soporte tienen acceso a esta carpeta. No modifiques los permisos sin la autorización del administrador del sistema.
+	* No coloques información sensible que deba ser restringida a un grupo específico. Esta carpeta es de acceso general.
+	* No otorgues permisos de escritura a usuarios externos a estos grupos sin previa autorización.
+
+* Limpieza y Mantenimiento:
+	* Revisa y elimina archivos obsoletos o irrelevantes de forma periódica, preferiblemente una vez al mes, para mantener la carpeta organizada.
+	* Los archivos que ya no sean necesarios, pero que deban conservarse para referencia futura, deben moverse a una subcarpeta "Archivos Antiguos".
+	* Evita almacenar archivos temporales, copias de seguridad o archivos personales que no sean útiles para todos los equipos.
+
+* Backup de Información:
+	* Verifica que la información crítica almacenada en esta carpeta esté incluida en las copias de seguridad automáticas del sistema.
+	* Si un archivo debe ser respaldado manualmente, notifícalo al administrador del sistema.
+
+* Actualización y Comunicación:
+	* Cuando se agregue un archivo relevante para varios equipos, se debe notificar a los miembros de los grupos correspondientes a través de los canales de comunicación internos (correo electrónico o chat), explicando el propósito del archivo y su utilidad.
+	* Los archivos agregados o modificados deben estar bien documentados para facilitar su comprensión y uso por parte de los diferentes equipos.
+
+* Uso Responsable:
+	* Esta carpeta debe usarse solo para documentos y recursos que sean de interés general para los equipos de Desarrollo, Implantación y Soporte.
+	* El uso inapropiado de esta carpeta, como almacenar información personal o irrelevante para los proyectos, puede derivar en la pérdida de permisos de acceso y otras medidas disciplinarias.
+
+En caso de dudas:
+	Si tienes preguntas sobre cómo organizar o compartir archivos en esta carpeta, contacta al administrador del sistema o al responsable de tu grupo para recibir orientación.

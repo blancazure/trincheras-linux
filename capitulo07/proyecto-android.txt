@@ -1,0 +1,54 @@
+Casos de Uso para el Desarrollo de la Aplicación Android
+Equipo de Desarrollo
+Fecha: Septiembre 2024
+
+1. Caso de Uso: Registro de Usuario
+	* Descripción: Permite a los usuarios registrarse en la aplicación utilizando su dirección de correo electrónico o su cuenta de Google.
+	* Actores: Usuario, Servidor de Autenticación
+	* Flujo Principal:
+		1. El usuario abre la pantalla de registro.
+		2. Elige entre registrarse con correo electrónico o con cuenta de Google.
+		3. Si selecciona correo electrónico, introduce su email y una contraseña.
+		4. Si selecciona Google, se redirige a la autenticación de Google.
+		5. El sistema valida los datos y crea una nueva cuenta en el servidor.
+		6. El usuario recibe un correo de confirmación.
+		7. Al confirmar, el registro se completa y el usuario es redirigido a la pantalla principal.
+	* Excepciones:
+		- Si el correo ya está registrado, se muestra un mensaje de error.
+		- Si hay problemas de red, se muestra un mensaje y se permite reintentar.
+
+2. Caso de Uso: Inicio de Sesión
+	* Descripción: Permite a los usuarios iniciar sesión en la aplicación con su correo electrónico o cuenta de Google.
+	* Actores: Usuario, Servidor de Autenticación
+	* Flujo Principal:
+		1. El usuario abre la pantalla de inicio de sesión.
+		2. Introduce su correo electrónico y contraseña, o selecciona inicio de sesión con Google.
+		3. El sistema envía las credenciales al servidor de autenticación.
+		4. Si las credenciales son correctas, el usuario es redirigido a la pantalla principal de la aplicación.
+	* Excepciones:
+		- Si las credenciales son incorrectas, se muestra un mensaje de error.
+		- Si hay problemas con la autenticación de Google, se redirige a la página de soporte.
+
+3. Caso de Uso: Recuperación de Contraseña
+	* Descripción: Permite a los usuarios recuperar su contraseña mediante un enlace enviado a su correo electrónico.
+	* Actores: Usuario, Servidor de Autenticación
+	* Flujo Principal:
+		1. El usuario selecciona la opción "¿Olvidaste tu contraseña?" en la pantalla de inicio de sesión.
+		2. Introduce su correo electrónico registrado.
+		3. El sistema envía un enlace de recuperación de contraseña al correo del usuario.
+		4. El usuario abre el enlace desde su correo y se redirige a la pantalla de cambio de contraseña.
+		5. El usuario introduce una nueva contraseña y la confirma.
+		6. La contraseña se actualiza en el servidor y el usuario puede iniciar sesión con la nueva contraseña.
+	* Excepciones:
+		- Si el correo no está registrado, se muestra un mensaje de error.
+		- Si el enlace de recuperación ha expirado, se solicita al usuario que solicite un nuevo enlace.
+		
+4. Caso de Uso: Notificaciones Push
+	* Descripción: El sistema envía notificaciones push a los usuarios para alertar sobre eventos importantes.
+	* Actores: Usuario, Servidor de Notificaciones
+	* Flujo Principal:
+		1. El servidor envía una notificación push a los usuarios registrados.
+		2. El dispositivo Android recibe la notificación y la muestra en la bandeja de notificaciones.
+		3. El usuario selecciona la notificación y es redirigido a la pantalla relevante en la aplicación.
+	* Excepciones:
+		- Si el dispositivo no tiene conexión, la notificación se almacenará hasta que esté en línea.

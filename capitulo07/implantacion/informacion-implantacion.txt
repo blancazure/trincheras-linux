@@ -1,0 +1,36 @@
+Instrucciones para el Uso de la Carpeta de Compartición de Información del Grupo Implantación
+
+Propósito de la Carpeta:
+	La carpeta de compartición de información del grupo Implantación está destinada a facilitar el intercambio de archivos clave entre los miembros del equipo de implantación y otros grupos. Esta carpeta debe ser utilizada para almacenar y compartir documentos esenciales relacionados con la implementación de proyectos, documentación técnica, y cualquier otro material relevante para la correcta ejecución de las implantaciones.
+
+Normas para el Uso Correcto de la Carpeta:
+
+* Almacenamiento de Archivos:
+	* Deben almacenarse únicamente documentos y archivos relacionados con las actividades del grupo de implantación.
+	* Los archivos deben organizarse en subcarpetas según proyecto, cliente o función. Evitar colocar archivos sueltos en la raíz de la carpeta.
+	* Los nombres de los archivos deben ser descriptivos y claros. Ejemplo: `Plan_Implementacion_Cliente_X.pdf` en lugar de `plan.pdf`.
+	* No se deben duplicar archivos. Si un archivo ya existe, verifica si es necesario crear una nueva versión. Si actualizas un archivo, renombra la versión anterior añadiendo “_OLD” o usando un sistema de versiones como “_v1”.
+
+* Permisos y Acceso:
+	* Los archivos son accesibles para todos los miembros del grupo de implantación y, en algunos casos, otros grupos de la empresa según las políticas establecidas.
+	* No alteres los permisos de los archivos o carpetas sin aprobación del administrador del sistema.
+	* No compartas información confidencial fuera del grupo de implantación a menos que tengas autorización.
+
+* Limpieza y Mantenimiento:
+	* Los archivos obsoletos o que ya no son relevantes deben ser eliminados o archivados. Realiza esta limpieza de manera regular, preferiblemente una vez al mes.
+	* Archivos que ya no se utilicen activamente pero que deban conservarse para referencia futura deben moverse a la subcarpeta "Archivos Antiguos".
+	* Evita mantener archivos temporales o personales que no sean útiles para el equipo.
+
+* Backup de Información:
+	* Asegúrate de que toda la información crítica en la carpeta esté incluida en el sistema de respaldo de la empresa. Los archivos importantes deben estar cubiertos por las copias de seguridad automáticas. Si tienes archivos que deben ser respaldados manualmente, contacta al administrador del sistema.
+
+* Actualización y Comunicación:
+	* Si agregas un archivo que sea de interés general para otros miembros del equipo o departamentos, avisa a través de los canales de comunicación internos (correo electrónico o mensajes) con una breve descripción del contenido y su relevancia.
+	* Incluye información clara sobre el propósito del archivo y el proyecto relacionado.
+
+* Uso Responsable:
+	* Esta carpeta no debe ser utilizada para almacenar archivos personales o que no estén relacionados con los proyectos de implantación.
+	* El uso inapropiado de la carpeta puede resultar en la pérdida de permisos y otras medidas disciplinarias.
+
+En caso de dudas:
+	Si no tienes claro cómo organizar o compartir archivos, o si tienes alguna pregunta sobre el uso de la carpeta, contacta al administrador del sistema o al jefe del grupo de implantación.
