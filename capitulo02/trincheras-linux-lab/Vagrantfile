@@ -1,9 +1,7 @@
 # Clonación del repositorio con los comandos y recursos desde GitHub
 $git_trincheras_linux = <<-SCRIPT
   echo Clonando repositorio 'trincheras-linux' desde GitHub...
-  git clone https://github.com/blancazure/trincheras-linux.git
-  mkdir ~/trincheras-linux/capitulo05/estructura/.directorio-oculto
-  chown -R vagrant:vagrant trincheras-linux
+  git clone https://github.com/blancazure/trincheras-linux.git  
 SCRIPT
 
 Vagrant.configure("2") do |config|
@@ -47,6 +45,7 @@ Vagrant.configure("2") do |config|
 
       vm_config.vm.provision "shell", path: "./scripts/#{machine[:script]}"
       vm_config.vm.provision "shell", inline: $git_trincheras_linux
+	  vm_config.vm.provision "shell", path: "./scripts/script-comun.sh"
 
       vm_config.vm.provider "virtualbox" do |v|
         v.name = "vm-lab-linux-#{machine[:name]}"
