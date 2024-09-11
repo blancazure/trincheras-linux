@@ -39,3 +39,5 @@ do
     sudo useradd -G soporte "$usuario"
     echo "Usuario creado: $usuario y asignado al grupo soporte"
 done
+
+
